@@ -1,3 +1,3 @@
 export const Component = () => {
-  return <div>Component</div>;
+  return <div>ujunglim test component</div>;
 };
