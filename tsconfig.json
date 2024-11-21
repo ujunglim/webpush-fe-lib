@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -17,10 +13,10 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "noEmit": false, // 컴파일러가 출력 파일 생성
+    "declaration": true, // .d.ts 선언 파일 생성
+    "outDir": "dist" // 컴파일된 파일 저장 디렉토리
   },
-  "include": [
-    "src"
-  ]
+  "include": ["./src/lib/**/*.tsx", "./src/lib/**/*.ts"] // 컴파일할 파일 패턴
 }
