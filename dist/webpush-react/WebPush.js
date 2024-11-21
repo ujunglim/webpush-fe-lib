@@ -60,7 +60,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 var LOCAL = "localhost";
 // const LOCAL = "182.198.46.77"; // machost
-export var Component = function () {
+export var WebPush = function () {
     var _a = useState([]), messages = _a[0], setMessages = _a[1];
     var _b = useState('{"title": "테스트2", "body": "메세지 전송 테스트2"}'), sendPushMessage = _b[0], setSendPushMessage = _b[1];
     var _c = useState(), pushId = _c[0], setPushId = _c[1];

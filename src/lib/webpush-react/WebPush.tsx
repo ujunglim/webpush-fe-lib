@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const LOCAL = "localhost";
 // const LOCAL = "182.198.46.77"; // machost
 
-export const Component = () => {
+export const WebPush = () => {
   const [messages, setMessages] = useState<string[]>([]);
   const [sendPushMessage, setSendPushMessage] = useState(
     '{"title": "테스트2", "body": "메세지 전송 테스트2"}'
